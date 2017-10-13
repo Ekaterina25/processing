@@ -1,0 +1,29 @@
+JMP kate
+intro: 
+DB "2" 
+DB "4" 
+DB "7" 
+DB "3" 
+DB "1" 
+db 0 
+kate: 
+MOV D, 15 
+MOV C, intro 
+MOV A, [C] 
+
+cmpmaster: 
+CMP A, [C+1] 
+JA print1 
+JB print2 
+
+
+print1: 
+hlt 
+
+print2: 
+MOV A, [C+1] 
+MOV [D], A 
+
+conclousion: 
+inc c 
+JMP cmpmaster
