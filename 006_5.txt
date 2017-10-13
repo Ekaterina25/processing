@@ -1,0 +1,7 @@
+mov a, 5 
+mov b, a 
+kate: 
+DEC B 
+MUL B 
+CMP B,1 
+JNE kate
