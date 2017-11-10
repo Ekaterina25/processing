@@ -1,8 +1,0 @@
-JMP kate 
-DB 25 
-DB 07 
-kate: 
-MOV A, 25 
-MOV B, 07 
-ADD A, B 
-MOV B, 0
