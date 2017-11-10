@@ -1,5 +1,0 @@
-MOV a,9
-MOV b,5
-MOV c,a
-MOV a,b
-MOV b,c
